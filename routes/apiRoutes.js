@@ -27,6 +27,13 @@ res.json("Complete!")
 }).catch(err=> console.log(err))
 
 })
+router.get("/api/workouts/range",function(req,res){
+
+    db.find({}).then(data => {
+    res.json(data)
+    })
+    
+    })
 
 
 
